@@ -7,12 +7,12 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body{
+body {
     min-height: 100vh;
     background: #E4E9F7;
 }
 
-.sidebar{
+.sidebar {
     position: fixed;
     top: 0;
     left: 0;
@@ -23,14 +23,15 @@ body{
 
 }
 
-.title{
-    position: absolute;
+.title {
+    position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    margin-top: 15px;
 }
 
-.title-logo{
+.title-logo {
     background: #695CFE;
     width: 50px;
     height: 50px;
@@ -43,15 +44,17 @@ body{
     margin-right: 10px;
 }
 
-.title-dis h2{
+.title-dis h2 {
     font-size: 19px;
 }
 
-.title-dis h4{
+.title-dis h4 {
     font-size: 14px;
 }
 
-.sidebar .title .toggle{
+.sidebar .title .toggle {
+    position: absolute;
+    left: 230px;
     background: #695CFE;
     width: 25px;
     height: 25px;
@@ -62,5 +65,107 @@ body{
     font-size: 22px;
     color: #fff;
     cursor: pointer;
-    
+}
+
+.menu-bar {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-content {
+    width: 100%;
+}
+
+.search-box {
+    background: #ccc;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    margin-top: 60px;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.search-box .search-icon {
+    font-size: 25px;
+    padding-left: 15px;
+}
+
+.search-box input {
+    width: 75%;
+    background: #ccc;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+.list {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.nav-link {
+    height: 60px;
+}
+
+.menu-bar{
+    display: flex;
+    flex-direction: column;
+}
+
+.list .nav-link a {
+    padding-left: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration: none;
+}
+
+.icon{
+    font-size: 25px;
+    color: #000;
+}
+
+.nav-text{
+    padding-left: 10px;
+}
+
+.nav-text h6{
+    font-size: 16px;
+    color: #000;
+}
+
+.bottom{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.bottom .list .nav-link a{
+    text-decoration: none;
+}
+
+button{
+    background: #ccc;
+    height: 25px;
+    margin-left: 20px;
+    width: 45px;
+    border-radius: 50px;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+}
+
+button span{
+    background: #999;
+    display: block;
+    height: 22px;
+    width: 22px;
+    border-radius: 50%;
+    margin-left: 3px;
 }
