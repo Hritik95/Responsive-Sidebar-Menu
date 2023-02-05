@@ -17,7 +17,7 @@
                 <h2>Hritik Jadhav</h2>
                 <h4>Web Developer</h4>
             </div>
-            <i class='bx bx-chevron-right toggle'></i>
+            <i class='bx bx-chevron-right toggle' onclick="sidebar_tg()" id="toggle"></i>
         </div>
 
         <div class="menu-bar">
@@ -100,11 +100,17 @@
     <script>
         var btn = document.getElementById("btn");
         var sidebar = document.getElementById("sidebar");
+        var tg = document.getElementById("toggle");
 
         function btn_function()
         {
             btn.classList.toggle("active");
             sidebar.classList.toggle("on");
+        }
+
+        function sidebar_tg()
+        {
+            sidebar.classList.toggle("shk");
         }
     </script>
 </body>

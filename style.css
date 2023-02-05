@@ -20,7 +20,7 @@ body {
     width: 250px;
     background-color: #fff;
     padding: 10px;
-
+    transition: 0.5s ease-in-out;
 }
 
 .title {
@@ -42,6 +42,8 @@ body {
     color: #fff;
     border-radius: 15px;
     margin-right: 10px;
+    margin-left: 7px;
+    transition: 0.5s ease-in-out;
 }
 
 .title-dis h2 {
@@ -65,6 +67,7 @@ body {
     font-size: 22px;
     color: #fff;
     cursor: pointer;
+    transition: 0.5s ease-in-out;
 }
 
 .menu-bar {
@@ -72,6 +75,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .menu-content {
@@ -90,7 +94,7 @@ body {
 
 .search-box .search-icon {
     font-size: 25px;
-    padding-left: 15px;
+    padding-left: 17px;
 }
 
 .search-box input {
@@ -99,6 +103,7 @@ body {
     border: none;
     font-size: 16px;
     padding-left: 10px;
+    transition: 0.5s ease-in-out;
 }
 
 .list {
@@ -167,6 +172,7 @@ button span{
     width: 22px;
     border-radius: 50%;
     margin-left: 3px;
+    transition: 0.5s ease-in-out;
 }
 
 .active{
@@ -192,4 +198,24 @@ button span{
 
 .on .menu-bar .menu-content .search-box{
     background-color: #3a3b3c;
+}
+
+.shk{
+    width: 80px;
+}
+
+.shk .title .title-dis,
+.shk .menu-bar .menu-content .list .nav-link .nav-text,
+.shk .menu-bar .bottom .list .nav-link .nav-text,
+.shk .menu-bar .bottom .list .nav-link .bx-moon,
+.shk .menu-bar .menu-content .search-box input{
+    display: none;
+}
+
+.shk .menu-bar .bottom .list .nav-link button{
+    margin-left: -10px;
+}
+
+.shk .title .toggle{
+    left: 60px;
 }
