@@ -87,7 +87,7 @@ body {
     display: flex;
     align-items: center;
     height: 40px;
-    margin-top: 60px;
+    margin-top: 40px;
     width: 100%;
     border-radius: 20px;
 }
@@ -107,14 +107,24 @@ body {
 }
 
 .list {
-    margin-top: 30px;
+    margin-top: 15px;
     display: flex;
     flex-direction: column;
     list-style: none;
 }
 
 .nav-link {
-    height: 60px;
+    height: 50px;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    transition: 0.5s ease-in-out;
+}
+
+.nav-link:hover{
+    background-color: #695CFE;
+    border-radius: 70px;
 }
 
 .menu-bar{
@@ -158,6 +168,7 @@ button{
     background: #ccc;
     height: 25px;
     margin-left: 20px;
+    margin-right: 5px;
     width: 45px;
     border-radius: 50px;
     cursor: pointer;
