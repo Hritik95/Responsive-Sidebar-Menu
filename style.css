@@ -94,8 +94,7 @@ body {
 }
 
 .search-box input {
-    width: 75%;
-    background: #ccc;
+    background: transparent;
     outline: none;
     border: none;
     font-size: 16px;
@@ -168,4 +167,29 @@ button span{
     width: 22px;
     border-radius: 50%;
     margin-left: 3px;
+}
+
+.active{
+    background: #efefef;
+}
+
+.active span{
+    background: #000;
+    margin-left: 22px;
+}
+
+.on{
+    background-color: #242526;
+    color: #fff;
+}
+
+.on .menu-bar .menu-content .list .nav-link .nav-text h6,
+.on .menu-bar .bottom .list .nav-link .nav-text h6,
+.on .menu-bar .menu-content .list .nav-link .icon,
+.on .menu-bar .bottom .list .nav-link .icon{
+    color: #fff;
+}
+
+.on .menu-bar .menu-content .search-box{
+    background-color: #3a3b3c;
 }

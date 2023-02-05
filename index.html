@@ -10,7 +10,7 @@
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <nav class="sidebar">
+    <nav class="sidebar" id="sidebar">
         <div class="title">
             <a href="#" class="title-logo">HJ</a>
             <div class="title-dis">
@@ -79,21 +79,33 @@
                 <ul class="list">
                     <li class="nav-link">
                         <a href="#">
-                            <i class='bx bx-log-out icon' style='color:#050505' ></i>
+                            <i class='bx bx-log-out icon' ></i>
                             <span class="nav-text"><h6>Logout</h6></span>
                         </a>
                     </li>
 
                     <li class="nav-link">
                         <a href="#">
-                            <i class='bx bx-moon icon' style='color:#050505' ></i>
+                            <i class='bx bx-moon icon'></i>
                             <span class="nav-text"><h6>Dark Theme</h6></span>
-                            <button><span></span></button>
+                            <button type="button" onclick="btn_function()" id="btn"><span></span></button>
                         </a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+
+
+    <script>
+        var btn = document.getElementById("btn");
+        var sidebar = document.getElementById("sidebar");
+
+        function btn_function()
+        {
+            btn.classList.toggle("active");
+            sidebar.classList.toggle("on");
+        }
+    </script>
 </body>
 </html>
